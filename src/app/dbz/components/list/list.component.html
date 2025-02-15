@@ -19,7 +19,7 @@
             {{ character.name }} - <strong>power:</strong> {{ character.power }}
         </div>
 
-        <button class="btn btn-danger" (click)="[onDeleteCharacter(i), emitOnDelete(i)]">X</button>
+        <button class="btn btn-danger" (click)="[onDeleteCharacter(character.id), emitOnDelete(character.id)]">X</button>
 
     </li>
 </ul>
